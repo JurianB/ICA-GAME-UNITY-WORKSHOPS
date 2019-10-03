@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Inventory : MonoBehaviour
 {
@@ -12,12 +13,19 @@ public class Inventory : MonoBehaviour
         Debug.Log("Item added: " + item.Name);
     }
 
-    public bool HasItem(Item itemToBeChecked)
+    public bool CheckHasItems(List<Item> itemsNeeded)
     {
-        foreach (var item in Items)
+        foreach (var item in itemsNeeded)
         {
-            if (item.Name.Equals(itemToBeChecked.Name))
+            var matchItems = Items.Where(i => i.Name.Equals(item.Name)).ToList();
+
+            if (matchItems.Count >= itemsNeeded.Count)
             {
+                foreach (var matchedItem in matchItems)
+                {
+                    Items.Remove(matchedItem);
+                }
+                
                 return true;
             }
         }
@@ -25,18 +33,4 @@ public class Inventory : MonoBehaviour
         return false;
     }
 
-    public int ItemCount(Item itemToBeChecked)
-    {
-        int count = 0;
-
-        foreach (var item in Items)
-        {
-            if (item.Name.Equals(itemToBeChecked.Name))
-            {
-                count++;
-            }
-        }
-
-        return count;
-    }
 }
