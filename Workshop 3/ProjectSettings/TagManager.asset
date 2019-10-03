@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags: []
-=======
-  tags:
-  - Rock
-  - Bridge
->>>>>>> f306551e40601af8186e2fab819f797c72d367b9
   layers:
   - Default
   - TransparentFX
