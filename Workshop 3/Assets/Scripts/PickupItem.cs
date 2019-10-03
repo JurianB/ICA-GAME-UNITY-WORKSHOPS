@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickupItem : MonoBehaviour
 {
+
     /// <summary>
     /// OnTriggerEnter is called when the Collider other enters the trigger.
     /// </summary>
