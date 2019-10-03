@@ -826,22 +826,22 @@ PrefabInstance:
     - target: {fileID: -2355438268804515475, guid: 83ceb98f9e52a4632972e7f40adef13a,
         type: 3}
       propertyPath: _itemsNeededAsString.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2355438268804515475, guid: 83ceb98f9e52a4632972e7f40adef13a,
         type: 3}
       propertyPath: _itemsNeededAsString.Array.data[0]
-      value: Rock
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: -2355438268804515475, guid: 83ceb98f9e52a4632972e7f40adef13a,
         type: 3}
       propertyPath: _itemsNeededAsString.Array.data[1]
-      value: Rock
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: -2355438268804515475, guid: 83ceb98f9e52a4632972e7f40adef13a,
         type: 3}
       propertyPath: _itemsNeededAsString.Array.data[2]
-      value: Rock
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5433835662328822968, guid: 83ceb98f9e52a4632972e7f40adef13a,
         type: 3}
